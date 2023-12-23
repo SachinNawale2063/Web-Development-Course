@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: aqua;
+}
+.box1{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid blue;
+
+}
+.box2{
+    color: yellow;
+    padding: 10px;
+    margin: 25px;
+    border: 2px solid black;
+}
+
+/* margin collaps matlab jo maximum margin hai wo ek bar lagegi */
