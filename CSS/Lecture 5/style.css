@@ -1,0 +1,25 @@
+h1{
+    color: blue;
+}
+
+.yellow{
+    color : yellow;
+}
+
+.cpurple{
+    color: purple;
+}
+
+.cred{
+    color: red;
+}
+
+/* atribute selector */
+[data-x=a]{
+    background-color: aqua;
+}
+
+/* jo sabse last me rahega wo property apply hogi matlab yaha pe purple color apply hoga basically it is based on the cascade algorithm of CSS */
+
+/* SPECIFICITY OF SELECTORS : 
+Inline Style > Id Selector > Class or Atribute selector > Element Selector > Universal Selector */

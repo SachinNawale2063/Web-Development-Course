@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+.box {
+    border: 2px solid black;
+    /* width: 155px; */
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.container {
+    border: 2px solid black;
+    /* width: 155px; */
+    width: 80vw;
+    height: 80vh;
+    font-size: 25px;
+    margin: 23px auto;
+    background-color: aquamarine;
+}
+
+.container p{
+    /* font-size: 2em; */
+    font-size: 2rem;
+}
+
+/* margin : auto this property applicable only on the block level element */
+
+/* mobile mai height jyada rehti hai and width kam but in pc width jyada and height therefore there is two units come into picture that is vmin and vmax */
+
+/* vmin : suppose 100 vmin matlab jo bhi height and width mai se minimum hoga wo */
+/* vmax : suppose 100 vmax matlab jo bhi height and width mai se maximum hoga wo  */ 
