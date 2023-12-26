@@ -1,0 +1,30 @@
+:root{    /*Global Variables */
+    --color:blue;
+    --seccolor:rgb(52, 52, 189);
+    --defpad:34px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: greenyellow;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    --defop:0.5;   /* Local Variable */
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+}
+
+.container{
+    /* background-color: aquamarine; */
+    background-color: var(--seccolor);
+}
