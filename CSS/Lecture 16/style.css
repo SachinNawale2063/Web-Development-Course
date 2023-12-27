@@ -1,0 +1,46 @@
+/* .box:first-child{
+    background-color: red;
+}
+
+.box::first-line{
+    background-color: yellow;
+} */
+
+/* 
+.boxes *{
+    color:purple;
+    border: 2px solid black;
+}
+*/
+
+/* .box:nth-child(even){
+    background-color: blue; 
+}
+*/
+
+.boxes::before{
+    content: "Sachin is good";
+    color: darkmagenta;
+}
+
+.boxes::after{
+    content:"Sachin is smart";
+    color: red;
+}
+
+
+.boxes::selection{
+    background-color: black;
+    color: white;
+}
+
+.box::first-letter{
+    font-size: 45px;
+    color:blue;
+}
+
+input::placeholder{
+    color: blue;
+    font-size: 20px;
+}
+
