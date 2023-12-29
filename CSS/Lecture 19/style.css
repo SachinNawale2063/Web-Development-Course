@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container {
+    border: 2px solid red;
+    display: flex;
+    height: 80vh;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* align-content: center; */
+    align-content: flex-start;
+    /*applicable when there are more than one items */
+    flex-flow:row wrap;
+    /* this property is combination of flex direction + flex wrap */
+    /* gap: 30px; */
+    /* row-gap: 20px; */
+    /* column-gap: 10px; */
+}
+
+.item {
+    height: 90px;
+    width: 90px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin: 4px;
+    /* flex-grow: 1; */
+}
+
+.item-1{
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+    /* align-self: flex-end; */
+}
+
+.order-1{
+    order: -1;
+}
+.order-2{
+    order: 2;
+}
+.order-3{
+    order: 3;
+}
+
+/* jitna jyada order utne badme box or item ayega */
