@@ -31,7 +31,7 @@ body{
     /* flex-wrap: wrap; */
     /* flex-wrap: wrap-reverse; */
     /* align-content: center; */
-    align-content: flex-start;
+    /* align-content: flex-start; */
     /*applicable when there are more than one items */
     flex-flow:row wrap;
     /* this property is combination of flex direction + flex wrap */
