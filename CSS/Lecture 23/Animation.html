@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+
+            background-color: aqua;
+            height: 80vh;
+            width: 30vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            /* animation: sachinkaanimation 3s ease-in-out; */
+            /* animation-name: sachinkaanimation; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 5s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            animation: sachinkaanimation 3s ease-in-out 2s infinite alternate-reverse;
+
+        }
+
+        @keyframes sachinkaanimation {
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+
+</body>
+
+</html>
