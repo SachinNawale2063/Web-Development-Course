@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    width: 171px;
+    height: 62px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul li {
+    margin: 0px 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.links ul li a img {
+    width: 23px;
+    height: 27px;
+}
+
+.links ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links ul li a span {
+    padding-left: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    padding: 15px;
+    /* border: 2px solid black; */
+}
+
+.content-1{
+    margin: 15px;
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading h1{
+    font-size: 48px;
+    font-weight: 400;
+    /* line-height: 1.3px; */
+}
+.heading img{
+    cursor: pointer;
+}
+
+.text-1 p{
+    padding: 0 0 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-1{
+    width: 300px;
+    height: 55px;
+    margin: 32px;
+    background-color: #00b6d1;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: #076b7b;
+}
+
+.version{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+.download h3{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.img-1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.sub{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
