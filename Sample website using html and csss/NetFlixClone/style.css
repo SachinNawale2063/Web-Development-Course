@@ -190,6 +190,9 @@ section.first>div :nth-child(2) {
 .faqbox:hover {
     background-color: #414141;
     color: white;
+    /* transform: translateX(100px) translateX(-200px); */
+    transform: scale(1.2);
+    transition: all 1s ease-out;
 }
 
 .faqbox svg {
