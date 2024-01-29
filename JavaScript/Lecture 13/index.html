@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Sachin Nawale 1</div>
+        <div id="red" class="box">Sachin Nawale 2</div>
+        <div class="box">Sachin Nawale 2.5</div>
+        <div class="box">Sachin Nawale 3</div>
+        <div class="box">Sachin Nawale 4</div>
+        <div class="box">Sachin Nawale 5</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

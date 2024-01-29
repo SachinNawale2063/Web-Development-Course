@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100vw;
+            height: 15vh;
+            position: sticky;
+            top: 0;
+            background-color: rgb(233, 80, 80);
+            border-bottom: 4px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            background-color: yellow;
+            /* background-color: rgb(random(255),random(255),random(255)); */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .box {
+            width: 80%;
+            height: 60%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 400px;
+
+        }
+
+        .sub-box {
+            width: 700px;
+            height: 400px;
+            background-color: blue;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .title {
+            width: 70%;
+            height: 80px;
+            margin-top: 65px;
+            background-color: gray;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .footer {
+            width: 100vw;
+            height: 15vh;
+            background-color: rgb(80, 233, 93);
+            border-top: 4px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .sticky-dot {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 70px;
+            height: 70px;
+            background-color: orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">This is sticky Header</div>
+    <div class="main">
+        <div class="box">
+            <div class="sub-box">Content 1</div>
+            <div class="sub-box">Content 1</div>
+        </div>
+        <div class="title">Simple Layout</div>
+    </div>
+    <div class="footer">This is normal footer</div>
+    <div class="sticky-dot">.`.</div>
+</body>
+
+</html>
