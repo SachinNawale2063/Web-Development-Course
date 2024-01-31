@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Javascript Callbacks and Promises</title>
+    <!-- call back function is a function that goes into another function and run -->
+    <!-- matlab function ko apn as a variable ham pass kr sakte hai -->
+    <!-- Javascript is in asynchronus in nature -->
+</head>
+<body>
+    
+    <script>
+        console.log("My name is Sachin");
+        console.log("My name is Sanket");
+
+        setTimeout(()=>{
+            console.log("Hey i am in setTimeout");
+        }, 2000)     // this is a asynchronus function that run at the end of the program
+
+        console.log("Hey this is after setTimeout");
+
+        const callback = (arg) =>{
+            console.log(arg);
+        }
+        const loadScript = (src, callback) => {
+            let sc = document.createElement("script");
+            sc.src = src;
+            sc.onload = callback("Sachin")
+            document.head.append(sc);
+        }
+        loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+
+    </script>
+</body>
+</html>
