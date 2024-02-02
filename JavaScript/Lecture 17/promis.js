@@ -17,7 +17,7 @@ prom1.then((a)=>{
     console.log(a);  
     //resolve hoga to .then run hoga 
 
-    // agr promise resolve hoga to idhar sachin print hoga
+    // agr promise resolve hoga to idhar "my setTimeout function succesfully run" print hoga
 
     //mostly apn ye use krte hai jab apn koi network request marte hai tab
 
@@ -47,7 +47,13 @@ let prom2 = new Promise((resolve, reject)=>{
             resolve("my setTimeout function succesfully run 2");
         }, 1000);
     }
-})
+}).then((a)=>{
+    console.log(a); 
+}).catch((err)=>{
+    console.log(err);
+    //reject hoga to .catch run hoga 
+    //error catch krte hai basically
+});
 
 let p3 = Promise.allSettled([prom1, prom2]);
 p3.then((a)=>{
