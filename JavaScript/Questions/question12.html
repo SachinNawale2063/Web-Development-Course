@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>12. The Token Manager:
+        You are developing a user authentication system, and you need to manage user authentication tokens. Implement a
+        function named setAuthToken that takes an authentication token and sets it in localStorage with an expiration
+        time.</p>
+
+    <script>
+
+        async function setAuthToken(tokens){
+            for(let i = 0; i<tokens.length; i++){
+                localStorage.setItem(tokens[i]["key"], JSON.stringify(tokens[i]))  // JSON .stringify use kiya hai because we can only store the string in the localstorage
+
+                console.log(JSON.parse(localStorage.getItem(tokens[i]["key"])));  // JSON .Parse use kiya hai because we get back stored the string objec into the original object
+            }
+
+        }
+
+        let tokens = [
+            {"name":"sachin nawale", "password":123456, "exp_time":20000, "key":1},
+            {"name":"sanket nawale", "password":128963, "exp_time":30000, "key":2},
+            {"name":"hitesh nawale", "password":789963, "exp_time":40000, "key":3}
+        ]
+
+        setAuthToken(tokens)
+
+        // function setAuthToken(authToken, expirationTimeInMinutes) {
+        //     const currentTime = new Date();
+        //     const expirationTime = new Date(currentTime.getTime() + expirationTimeInMinutes * 60000); // Convert minutes to milliseconds
+
+        //     const tokenData = {
+        //         token: authToken,
+        //         expires: expirationTime.getTime(),
+        //     };
+
+        //     // Convert the token data to a JSON string
+        //     const tokenString = JSON.stringify(tokenData);
+
+        //     // Save the token string in local storage
+        //     localStorage.setItem('authToken', tokenString);
+        // }
+        // setAuthToken(123456, 60)
+        // setAuthToken(123446, 70)
+
+    </script>
+</body>
+
+</html>

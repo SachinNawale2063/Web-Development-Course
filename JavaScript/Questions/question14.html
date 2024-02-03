@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            background-color: green;
+            width: 100vw;
+            height: 40vh;
+        }
+
+        .second {
+            background-color: rgb(128, 0, 0);
+            width: 100vw;
+            height: 30vh;
+        }
+
+        .third {
+            background-color: rgb(41, 0, 128);
+            width: 100vw;
+            height: 20vh;
+        }
+
+        .fourth {
+            background-color: rgb(105, 0, 128);
+            width: 100vw;
+            height: 20vh;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #scrollToTopButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none;
+        }
+
+        #scrollToTopButton:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+     <p>14. The Window Scroller:
+        You are developing a single-page application with a smooth scrolling effect. Implement a function named smoothScrollToTop that smoothly scrolls the window to the top when called.</p>
+
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div> 
+
+    <button id="scrollToTopButton" onclick="smoothScrollToTop()">Scroll to Top</button>
+
+    <script>
+        // function smoothScrollToTop() {
+        //     const scrollToTop = () => {
+        //         const currentPosition = window.scrollY;
+
+        //         if (currentPosition > 0) {
+        //             const newPosition = currentPosition - currentPosition / 8;
+        //             window.scrollTo(0, newPosition);
+        //             requestAnimationFrame(scrollToTop);
+        //         }
+        //     };
+
+        //     scrollToTop();
+        // }
+        // smoothScrollToTop();
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const currentPosition = window.scrollY;
+                console.log(window.scrollY);
+                if (currentPosition > 0) {
+                    const newPosition = currentPosition - currentPosition / 10;
+                    window.scrollTo(0, newPosition);
+                    requestAnimationFrame(scrollToTop);
+                }
+            };
+
+            scrollToTop();
+        }
+
+        window.addEventListener('scroll', () => {
+            const scrollToTopButton = document.getElementById('scrollToTopButton');
+            if (window.scrollY > 300) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
+

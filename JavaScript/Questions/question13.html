@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>13. The Shopping Cart Totalizer:
+        You are working on an e-commerce website, and you need to calculate the total cost of items in the shopping cart. Implement a function named calculateTotal that takes an array of products with prices and quantities and returns the total cost.</p>
+
+    <script>
+
+        const calculateTotal = (products) =>{
+            let sum = 0
+            for (const items of products) {
+                for (const key in items) {
+                    sum = sum + items[key]
+                }
+            }
+            return sum
+        }
+
+        let products = [{"abc":1000},{"def":500},{"ghi":400},{"jkl":2000},{"mno":100}]
+
+        let total_price = calculateTotal(products)
+
+        console.log(total_price);   //4000
+
+    </script>
+
+</body>
+</html>

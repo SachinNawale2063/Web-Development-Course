@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>7. The Local Storage Manager:
+        You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that
+        takes a note object and saves it to the browser's local storage.</p>
+
+    <button id="btn-1">Add Note</button>
+    <button id="btn-2">Remove Note</button>
+
+    <script>
+
+        let counter = 1;
+
+        let random_key = 1;
+        const saveNoteToLocalStorage = (note) => {
+            localStorage.setItem(random_key, note);
+            random_key++;
+            return random_key
+        }
+
+        let btn_1 = document.getElementById("btn-1")
+        let btn_2 = document.getElementById("btn-2")
+
+        btn_1.addEventListener("click", () => {
+            let note = prompt("Write a Note That You want to save in local storage")
+            let key = saveNoteToLocalStorage(note)
+
+            let div = document.createElement("div")
+            div.className = counter
+            div.innerHTML = counter + ". " + localStorage.getItem(key - 1)
+            counter++;
+            div.style.fontSize = "20px"
+            document.body.append(div)
+        })
+
+        btn_2.addEventListener("click", () => {
+            let last = random_key - 1;
+            let note_number = prompt("Write a note number between " + "1 and " + last)
+
+            let remove_note = document.getElementsByClassName(note_number)
+            while (remove_note.length > 0) {
+                remove_note[0].parentNode.removeChild(remove_note[0]);
+            }
+            localStorage.removeItem(note_number)
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
