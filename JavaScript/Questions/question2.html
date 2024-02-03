@@ -1,0 +1,75 @@
+<!-- 2. The Double Trouble:
+   You are tasked with writing a function that doubles each element in an array. However, there's a catch: if the array contains consecutive duplicate elements, only double one of them. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // let arr = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
+
+        // let skipNext = false;
+        // let double = arr.map((current, index, array) => {
+        //     if (skipNext) {
+        //         skipNext = false;
+        //         return undefined; // Skip the next element
+        //     }
+        //     if (index < array.length - 1 && current === array[index + 1]) {
+        //         skipNext = true;
+        //         return current;
+        //     }
+        //     else {
+        //         return current * 2
+        //     }
+        // })
+
+        // console.log(double);
+
+        // double = double.filter((element) => {
+        //     element !== undefined
+        // })
+
+        // console.log('Original Array : ', arr);
+        // console.log('Doubled Array : ', double);
+
+        function doubleTrouble(arr) {
+            let skipNext = false;
+
+            return arr.map((current, index, array) => {
+                if (skipNext) {
+                    skipNext = false;
+                    return undefined; // Skip the next element
+                }
+
+                if (index < array.length - 1 && current === array[index + 1]) {
+                    skipNext = true;
+                    // let temp = current
+                    // index += 1
+                    return current*2;
+                } else {
+                    return current * 2;
+                }
+            }).filter(element => element !== undefined);
+        }
+
+        // Example usage:
+        const originalArray = [1, 2, 2, 3, 4, 4, 5];
+        console.log('original array : ',originalArray);
+        const resultArray = doubleTrouble(originalArray);
+        console.log('doubled array : ',resultArray);
+
+
+    </script>
+
+</body>
+
+</html>

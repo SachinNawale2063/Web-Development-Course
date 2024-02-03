@@ -1,0 +1,39 @@
+<!-- 4. The Password Validator:
+   You are building a password validation feature. Create a function that checks if a given password meets the following criteria: at least 8 characters long, contains both uppercase and lowercase letters, and includes at least one digit. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/
+        let passwordtocheck = "abcAbc12"
+        if (pattern.test(passwordtocheck) == true) {
+            console.log('Valid Password');
+        }else{
+            console.log('Wrong Password');
+        }
+
+        // const isPasswordValid = password => /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/.test(password);
+
+        // // Example usage:
+        // const passwordToCheck = "abcAbc12";
+        // const isValid = isPasswordValid(passwordToCheck);
+
+        // if (isValid) {
+        //     console.log('Valid Password');
+        // }else{
+        //     console.log('Wrong Password');
+        // }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!-- The Mirror Mirror:
+   Imagine you have a string, and you need to create a new string that is a mirror image of the original. Write a function that appends the reversed version of the original string to itself. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let ogstring = "sachin"
+        let reversedstring = ogstring.split('').reverse().join('')  //string ko first aray of letters me convert kiya using split because reverse function array ke upar kam krta hai and then using join we joined all the letters in array after that we get reverse string. 
+        // Steps : original string = sachin
+                // 1. split = ['s', 'a', 'c','h','i','n']
+                // 2. reverse = ['n','i','h','c','a',s]
+                // 3. join = nihcas
+        let ans = ogstring + reversedstring
+        console.log('Answer : ', ans);
+    </script>
+
+</body>
+</html>

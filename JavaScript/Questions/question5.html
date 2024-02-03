@@ -1,0 +1,36 @@
+<!-- 5. The Sum Selector:
+   You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>5. The Sum Selector:
+        You are working on a function that should sum all numbers in an array until it encounters a negative number. Write a function that performs this summation.</p>
+
+    <script>
+
+        const sum = (nums) => {
+            let ans = 0
+            for (const item of nums) {
+                if (item < 0) {
+                    return ans
+                }
+                else{
+                    ans += item
+                }
+            }
+            return ans
+        }
+
+        let nums = [1,2,3,4,0,-1,2,3,4]
+        console.log('Answer : ',sum(nums));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 1. The Magical Sorting Hat: -->
+<!-- Imagine you are creating a magical sorting hat for a wizard school. Implement a JavaScript function that takes an array of student names and assigns them to one of the four houses (Gryffindor (length less than 6), Hufflepuff(length less than 8), Ravenclaw(length less than 12), or Slytherin(length greater than or equal to 12)) based on the length of their names. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const magical_sorting_hat = (names) => {
+            
+            let obj = {}
+
+            for (const name of names) {
+                if (name.length >= 12) {
+                    obj[name] = "Slytherin"
+                }
+                else if (name.length < 12) {
+                    obj[name] = "Ravenclaw"
+                }
+                else if (name.length < 8) {
+                    obj[name] = "Hufflepuff"
+                }
+                else if (name.length < 6) {
+                    obj[name] = "Gryffindor"
+                }
+            }
+            console.log(obj);
+
+        }
+
+        let names = ["sachin", "sanketnawal", "abcdefghijkl", "abcdefghijklm", "abc"]
+        magical_sorting_hat(names);
+
+    </script>
+</body>
+
+</html>
