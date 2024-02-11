@@ -7,6 +7,10 @@
 
 var emoji = require('node-emoji')
 console.log(emoji.get('unicorn'))
+console.log(emoji.get('smile'))
+console.log(emoji.get('angry'))
+console.log(emoji.get('heart'))
+
 
 
 
