@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(174, 240, 240);
+}
+.container{
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  /* border: 2px solid blue; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}

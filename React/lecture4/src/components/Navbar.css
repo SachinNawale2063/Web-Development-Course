@@ -1,0 +1,21 @@
+nav{
+    width: 100%;
+    background-color: rgb(118, 32, 118);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.heading{
+    font-size: 24px;
+}
+.subheading{
+    font-size: 18px;
+}
+
+.subheading a{
+    color: white;
+}
