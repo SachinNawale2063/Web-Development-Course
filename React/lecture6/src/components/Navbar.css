@@ -1,0 +1,38 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background-color: rgb(115, 115, 218);
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+ul a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+/* ul a:active{
+    color: red;
+} */
+
+.red{
+    color: red;
+}
+
+ul a li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.heading{
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
