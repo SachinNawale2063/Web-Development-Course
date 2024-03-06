@@ -4,7 +4,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-        This i an About page
+        This is an About page
     </div>
   )
 }
